@@ -1,0 +1,25 @@
+.modal__content#form-modal(data-modal-content)
+    button.modal__close(data-modal-close)
+        span.modal__close-icon
+            span
+            span
+    .modal__form
+        form.form._validate(action='#' data-validate-form)
+            .form__input(data-error-text='*Будь ласка, введіть Ваше ім\'я')
+                input._req(type='text' name='name' placeholder="Ім'я")
+            .form__input._tel(data-error-text='*Будь ласка, введіть коректний номер телефону')
+                input._req._tel(type='text' name='number' placeholder='Номер телефону')
+            .form__input
+                textarea(placeholder='Коментар' name='comment')
+            .form__button
+                button.btn Надіслати
+
+.modal__content#form-success(data-modal-content)
+    button.modal__close(data-modal-close)
+        span.modal__close-icon
+            span
+            span
+    .modal__text
+        h2.section-title Дякуємо!
+        p.section-description Форма успішно відправлена. Гарного дня!
+

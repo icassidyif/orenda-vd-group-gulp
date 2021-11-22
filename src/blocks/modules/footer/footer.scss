@@ -1,0 +1,58 @@
+.footer {
+    height: 80 / 16 * 1rem;
+    background-color: color(dark);
+
+    @include media(lg) {
+        height: 255 / 16 * 1rem;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        @include media(lg) {
+            justify-content: space-between;
+        }
+    }
+
+    &__nav {
+        @extend .header__menu-nav;
+
+        display: none;
+
+        @include media(lg) {
+            display: flex;
+        }
+
+        &-link {
+            @extend .header__menu-link;
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        * {
+            height: 28 / 16 * 1rem;
+        }
+
+        > * + * {
+            margin: 0 0 0 20 / 16 * 1rem;
+        }
+
+        a {
+            svg {
+                fill: color(beige);
+                transition: var(--transition);
+            }
+
+            &:hover {
+                svg {
+                    fill: color(light);
+                }
+            }
+        }
+    }
+}

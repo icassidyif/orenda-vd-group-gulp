@@ -1,0 +1,32 @@
+// General
+@import './abstracts/breakpoints';
+@import './abstracts/colors';
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './abstracts/type';
+@import './abstracts/variables';
+@import './base/fonts';
+@import './base/root';
+@import './base/reset';
+@import 'swiper';
+@import 'aos';
+//@import './vendor/libs';
+
+// Components
+@import '../blocks/components/button/button';
+@import '../blocks/components/form/form';
+
+// Modules
+@import '../blocks/modules/header/header';
+@import '../blocks/modules/showcase/showcase';
+@import '../blocks/modules/about/about';
+@import '../blocks/modules/advantages/advantages';
+@import '../blocks/modules/gallery/gallery';
+@import '../blocks/modules/apartments/apartments';
+@import '../blocks/modules/installments/installments';
+@import '../blocks/modules/buy/buy';
+@import '../blocks/modules/contacts/contacts';
+@import '../blocks/modules/address/address';
+@import '../blocks/modules/footer/footer';
+@import '../blocks/modules/cookies/cookies';
+@import '../blocks/modules/modal/modal';

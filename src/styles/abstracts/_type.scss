@@ -1,0 +1,26 @@
+$font-family: 'Montserrat', sans-serif !default;
+
+$font-size-root: null !default;
+$font-size-base: 1rem !default;
+
+$h1-font-size: 4.3125 * $font-size-base !default;
+$h2-font-size: 3.3125 * $font-size-base !default;
+$h3-font-size: 2.4375 * $font-size-base !default;
+$h4-font-size: 1.5625 * $font-size-base !default;
+$body1-font-size: 1.125 * $font-size-base !default;
+$body2-font-size: $font-size-base !default;
+
+$font-sizes: (
+    h1: $h1-font-size,
+    h2: $h2-font-size,
+    h3: $h3-font-size,
+    h4: $h4-font-size,
+    body1: $body1-font-size,
+    body2: $body2-font-size,
+) !default;
+
+$font-weights: (
+    400: 400,
+    500: 500,
+    700: 700
+) !default;

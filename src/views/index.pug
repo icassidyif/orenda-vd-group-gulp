@@ -1,0 +1,21 @@
+extends ./layouts/default
+include ./helpers/mixins
+
+block variables
+    - const lang = 'uk'
+    - const title = 'ЖК Богунська 1 від VD Group. Новобудова на вул. Василіянок, Івано-Франківськ'
+
+block content
+    include ../blocks/modules/header/header
+    include ../blocks/modules/showcase/showcase
+    include ../blocks/modules/about/about
+    include ../blocks/modules/advantages/advantages
+    include ../blocks/modules/gallery/gallery
+    include ../blocks/modules/apartments/apartments
+    include ../blocks/modules/installments/installments
+    include ../blocks/modules/buy/buy
+    include ../blocks/modules/contacts/contacts
+    include ../blocks/modules/address/address
+    include ../blocks/modules/footer/footer
+    include ../blocks/modules/cookies/cookies
+    include ../blocks/modules/modal/modal

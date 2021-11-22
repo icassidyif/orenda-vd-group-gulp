@@ -1,0 +1,23 @@
+$dark: #333 !default;
+$dark-alt: lighten($dark, 10%) !default;
+$gray: #bdbdbd !default;
+$gray-alt: darken($gray, 10%) !default;
+$light: #fff !default;
+$light-alt: darken($light, 10%) !default;
+$beige: #d3b28f !default;
+$beige-alt: darken($beige, 10%) !default;
+$danger: #ea5050 !default;
+$danger-alt: darken($danger, 10%) !default;
+
+$colors: (
+    dark: $dark,
+    dark-alt: $dark-alt,
+    gray: $gray,
+    gray-alt: $gray-alt,
+    light: $light,
+    light-alt: $light-alt,
+    beige: $beige,
+    beige-alt: $beige-alt,
+    danger: $danger,
+    danger-alt: $danger-alt
+) !default;

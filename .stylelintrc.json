@@ -1,0 +1,17 @@
+{
+    "syntax": "scss",
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-recess-order"
+    ],
+    "rules": {
+        "font-family-name-quotes": "always-unless-keyword",
+        "function-url-quotes": "always",
+        "selector-attribute-quotes": "always",
+        "string-quotes": "single",
+        "indentation": 4,
+        "at-rule-no-unknown": null,
+        "no-descending-specificity": null,
+        "declaration-no-important": null
+    }
+}

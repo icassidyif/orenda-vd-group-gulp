@@ -1,0 +1,61 @@
+.installments {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: color(dark);
+        opacity: 0.8;
+    }
+
+    &__bg,
+    &__bg * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        hyphens: manual;
+        color: color(beige);
+    }
+
+    &__description {
+        color: color(light);
+    }
+
+    &__grid {
+        @include media(md) {
+            margin: 0 0 80 / 16 * 1rem 0;
+        }
+    }
+
+    &-item {
+        &__title {
+            color: color(beige);
+        }
+
+        &__text {
+            color: color(light);
+        }
+    }
+
+    &__button {
+        display: none;
+        min-width: 267 / 16 * 1rem;
+
+        @include media(md) {
+            display: inline-flex;
+            min-width: 270 / 16 * 1rem;
+        }
+    }
+}

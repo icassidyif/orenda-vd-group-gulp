@@ -1,0 +1,146 @@
+section.gallery.section-spacing-outer.section-spacing-inner#gallery
+    .gallery__bg
+        picture
+            source(src='assets/gallery/bg.webp' type='image/webp')
+            img(src='assets/gallery/bg.png' alt='')
+        picture
+            source(src='assets/gallery/bg.webp' type='image/webp')
+            img(src='assets/gallery/bg.png' alt='')
+
+    .container
+
+        .gallery__body
+            .gallery__header.section-header
+                h2.gallery__title.section-title
+                    span Фото
+                    span ЖК Богунська 1
+                p.gallery__description.section-description Почуття комфорту вас не покидатиме від двору й до квартири.
+
+            .gallery__grid.gallery__grid_primary
+
+                //- item 1
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/1.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/1.webp' type='image/webp')
+                            img(src='assets/gallery/1.jpg' alt='')
+
+                    h3.gallery__grid-item-title Підземний паркінг
+                    p.gallery__grid-item-text.section-text Ваш автомобіль під дахом, під наглядом та в теплі. Підіймайтесь додому на ліфті відразу з паркінгу
+
+            .gallery__grid.gallery__grid_secondary.grid-collapse
+
+                //- item 2 (p)
+
+                .gallery__grid-item(data-move='576,.gallery__grid.gallery__grid_primary,last,min')
+                    a.gallery__grid-item-img(href='assets/gallery/4.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/4.webp' type='image/webp')
+                            img(src='assets/gallery/4.jpg' alt='')
+
+                    h3.gallery__grid-item-title Якість будівництва
+                    p.gallery__grid-item-text.section-text Фасад новобудови на вулиці Василіянок утеплений мінеральною ватою, що посилює вогнетривкість та ізолює від шумів
+
+
+
+                //- item 3 (p)
+                .gallery__grid-item(data-move='576,.gallery__grid.gallery__grid_primary,last,min')
+                    a.gallery__grid-item-img(href='assets/gallery/5.jpg' data-fslightbox='gallery1' data-caption='123')
+                        picture
+                            source(srcset='assets/gallery/5.webp' type='image/webp')
+                            img(src='assets/gallery/5.jpg' alt='')
+
+                    h3.gallery__grid-item-title Сучасні вікна
+                    p.gallery__grid-item-text.section-text Квартири в ЖК Богунська оснащені вікнами Rehau з енергоощадним напиленням, які захищають від ультрафіолету, зберігають тепло та запобігають появі конденсату
+
+                //- item 4 (p)
+                .gallery__grid-item(data-move='576,.gallery__grid.gallery__grid_primary,last,min')
+                    a.gallery__grid-item-img(href='assets/gallery/05.png' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/05.webp' type='image/webp')
+                            img(src='assets/gallery/05.png' alt='')
+
+                    h3.gallery__grid-item-title Безпечний комплекс
+                    p.gallery__grid-item-text.section-text Забудовник VDGroup використовує монолітно-каркасну технологію, що забезпечує надійність та міцність конструкції
+
+
+                //- item 1
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/2.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/2.webp' type='image/webp')
+                            img(src='assets/gallery/2.jpg' alt='')
+
+                    h3.gallery__grid-item-title З повагою до культури
+                    p.gallery__grid-item-text.section-text ЖК Богунська мирно співіснує з музеєм Гриневичів, що є історичною пам’яткою Івано-Франківська та розташовується на території ЖК
+
+                //- item 2
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/10.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/10.webp' type='image/webp')
+                            img(src='assets/gallery/10.jpg' alt='')
+
+                    h3.gallery__grid-item-title Насолоджуйся містом навіть удома
+                    p.gallery__grid-item-text.section-text З переваг розташування - можливість спостерігати за ним у світлі вечірніх вогнів. Тим паче, що Ваша майбутня оселя знаходиться у центрі, за кронами дерев Піонерського парку, біля однієї з найголовніших вулиць
+
+                //- item 3
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/3.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/3.webp' type='image/webp')
+                            img(src='assets/gallery/3.jpg' alt='')
+
+                    h3.gallery__grid-item-title Жити з комфортом
+                    p.gallery__grid-item-text.section-text Купити квартиру від VDGroup – це користуватись консьєрж-сервісом із цілодобовим обслуговуванням
+
+                //-item 4
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/9.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/9.webp' type='image/webp')
+                            img(src='assets/gallery/9.jpg' alt='')
+
+                    h3.gallery__grid-item-title Розваги поблизу
+                    p.gallery__grid-item-text.section-text Інтерактивний дитячий майданчик та відпочинкова зона створені для комфортного дозвілля на території будинку
+                //-item 5
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/8.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/8.webp' type='image/webp')
+                            img(src='assets/gallery/8.jpg' alt='')
+
+                    h3.gallery__grid-item-title Броньовані двері
+                    p.gallery__grid-item-text.section-text VD Group використовує броньовані двері від фірми Максимум, щоби мешканці ЖК отримали довговічність, тепло- та шумоізоляцію та якісну фурнітуру
+
+                //-item 6
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/6.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/6.webp' type='image/webp')
+                            img(src='assets/gallery/6.jpg' alt='')
+
+                    h3.gallery__grid-item-title Стіни підготовлені до оздоблення
+                    p.gallery__grid-item-text.section-text Вони оброблені гіпсовою штукатуркою, адже це екологічний матеріал, що безпечний для дітей
+
+                //-item 7
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/11.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/11.webp' type='image/webp')
+                            img(src='assets/gallery/11.jpg' alt='')
+
+                    h3.gallery__grid-item-title Пересувайтесь зручно
+                    p.gallery__grid-item-text.section-text Великий ліфт на 13 осіб надає змогу зайти з коляскою, а його безшумність не турбуватиме вас вночі
+
+                //-item 7
+                .gallery__grid-item
+                    a.gallery__grid-item-img(href='assets/gallery/7.jpg' data-fslightbox='gallery1')
+                        picture
+                            source(srcset='assets/gallery/7.webp' type='image/webp')
+                            img(src='assets/gallery/7.jpg' alt='')
+
+                    h3.gallery__grid-item-title Пропозиції преміум-класу
+                    p.gallery__grid-item-text.section-text Дистанційно керуйте відеодомофоном, не виходячи з дому та заходьте крізь прозорі під’їзні двері як до п’ятизіркового готелю
+
+            button.gallery__cta.btn.ac-open(data-active-text='Приховати' data-inactive-text='Більше') Більше

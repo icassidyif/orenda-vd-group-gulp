@@ -1,0 +1,25 @@
+:root {
+    @each $key, $value in $colors {
+        --#{$key}: #{$value};
+    }
+
+    --font-family: #{$font-family};
+
+    @each $key, $value in $font-sizes {
+        --#{$key}: #{$value};
+    }
+
+    --border-width: #{$border-width};
+    --border-width-lg: #{$border-width-lg};
+    --border-radius: #{$border-radius};
+    --border-radius-lg: #{$border-radius-lg};
+    --container-max-width: #{$container-width};
+    --container-padding-sides: #{$container-padding-sides};
+    --screen-min-width: #{$wrapper-min-width};
+    --section-spacing: 3.125rem;
+    --section-spacing-md: 4.375rem;
+    --section-spacing-lg: 6.25rem;
+    --transition: 0.3s ease-in-out;
+
+    font-size: $font-size-root;
+}

@@ -1,0 +1,188 @@
+section.apartments.section-spacing-outer#apartments
+    .container
+        .apartments__body
+            .apartments__header.section-header
+                h2.apartments__title.section-title Квартири
+                p.apartments__description.section-description Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim
+
+            .tabs
+                .tabs__header.apartments__buttons
+                    button.tabs__trigger.apartments__btn.btn._active(data-tab='1') Усі
+                    button.tabs__trigger.apartments__btn.btn._inactive(data-tab='2') 1 кім.
+                    button.tabs__trigger.apartments__btn.btn._inactive(data-tab='3') 2 кім.
+                    button.tabs__trigger.apartments__btn.btn._inactive(data-tab='4') 3 кім.
+
+                .tabs__body
+                    .apartments__tab.tabs__content._active(data-tab='1')
+                        .swiper
+                            .swiper-wrapper
+                                // 1
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/1.webp` type='image/webp')
+                                                img(src=`assets/apartments/1.jpg` alt='')
+                                        .apartments__item-title
+                                            span 1 кімнатна квартира
+                                            span 37,74 м2
+                                        .apartments__item-price $ 28 300
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/2.webp` type='image/webp')
+                                                img(src=`assets/apartments/2.jpg` alt='')
+                                        .apartments__item-title
+                                            span 1 кімнатна квартира
+                                            span 42,34 м2
+                                        .apartments__item-price $ 31 750
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+
+                                // 2
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/3.webp` type='image/webp')
+                                                img(src=`assets/apartments/3.jpg` alt='')
+                                        .apartments__item-title
+                                            span 2 кімнатна квартира
+                                            span 61,97 м2
+                                        .apartments__item-price $ 46 450
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/4.webp` type='image/webp')
+                                                img(src=`assets/apartments/4.jpg` alt='')
+                                        .apartments__item-title
+                                            span 2 кімнатна квартира
+                                            span 64,85 м2
+                                        .apartments__item-price $ 48 600
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/5.webp` type='image/webp')
+                                                img(src=`assets/apartments/5.jpg` alt='')
+                                        .apartments__item-title
+                                            span 2 кімнатна квартира
+                                            span 68,06 м2
+                                        .apartments__item-price $ 51 000
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+                                //    3
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/6.webp` type='image/webp')
+                                                img(src=`assets/apartments/6.jpg` alt='')
+                                        .apartments__item-title
+                                            span 3 кімнатна квартира
+                                            span 83,80 м2
+                                        .apartments__item-price $ 62 850
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+
+                            .apartments__pagination.swiper-pagination
+
+                    .apartments__tab.tabs__content(data-tab='2')
+                        .swiper
+                            .swiper-wrapper
+
+                                // 1
+                                .swiper-slide
+                                    .apartments__item
+                                       .apartments__item-img
+                                           picture
+                                               source(srcset=`assets/apartments/1.webp` type='image/webp')
+                                               img(src=`assets/apartments/1.jpg` alt='')
+                                       .apartments__item-title
+                                           span 1 кімнатна квартира
+                                           span 37,74 м2
+                                       .apartments__item-price $ 28 300
+                                       .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+
+                                .swiper-slide
+                                   .apartments__item
+                                       .apartments__item-img
+                                           picture
+                                               source(srcset=`assets/apartments/2.webp` type='image/webp')
+                                               img(src=`assets/apartments/2.jpg` alt='')
+                                       .apartments__item-title
+                                           span 1 кімнатна квартира
+                                           span 42,34 м2
+                                       .apartments__item-price $ 31 750
+                                       .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+                            .apartments__pagination.swiper-pagination
+
+                    .apartments__tab.tabs__content(data-tab='3')
+                        .swiper
+                            .swiper-wrapper
+                                // 2
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/3.webp` type='image/webp')
+                                                img(src=`assets/apartments/3.jpg` alt='')
+                                        .apartments__item-title
+                                            span 2 кімнатна квартира
+                                            span 61,97 м2
+                                        .apartments__item-price $ 46 450
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/4.webp` type='image/webp')
+                                                img(src=`assets/apartments/4.jpg` alt='')
+                                        .apartments__item-title
+                                            span 2 кімнатна квартира
+                                            span 64,85 м2
+                                        .apartments__item-price $ 48 600
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/5.webp` type='image/webp')
+                                                img(src=`assets/apartments/5.jpg` alt='')
+                                        .apartments__item-title
+                                            span 2 кімнатна квартира
+                                            span 68,06 м2
+                                        .apartments__item-price $ 51 000
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+                            .apartments__pagination.swiper-pagination
+
+                    .apartments__tab.tabs__content(data-tab='4')
+                        .swiper
+                            .swiper-wrapper
+                                //    3
+                                .swiper-slide
+                                    .apartments__item
+                                        .apartments__item-img
+                                            picture
+                                                source(srcset=`assets/apartments/6.webp` type='image/webp')
+                                                img(src=`assets/apartments/6.jpg` alt='')
+                                        .apartments__item-title
+                                            span 3 кімнатна квартира
+                                            span 83,80 м2
+                                        .apartments__item-price $ 62 850
+                                        .apartments__item-btn.btn(data-modal-open="form-modal") Детальніше
+
+                            .apartments__pagination.swiper-pagination

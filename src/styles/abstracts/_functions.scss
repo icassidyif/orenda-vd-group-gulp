@@ -1,0 +1,51 @@
+@function get-proportion($known: 100, $required: 50) {
+    $result: ($required * 100) / $known;
+
+    @return $result * 1%;
+}
+
+// Values
+@function color($color-name) {
+    @if map-has-key($colors, $color-name) {
+        @return var(--#{$color-name});
+    }
+
+    @warn 'There is no such color "#{$color-name}" in #{$colors}';
+
+    @return null;
+}
+
+@function font-size($size) {
+    @if map-has-key($font-sizes, $size) {
+        @return var(--#{$size});
+    }
+
+    @warn 'There is no such breakpoint "#{$size}" in #{$font-sizes}';
+
+    @return null;
+}
+
+@function fw($weight) {
+    @if map-has-key($font-weights, $weight) {
+        @return $weight;
+    }
+
+    @warn 'There is no such breakpoint "#{$weight}" in #{$font-weights}';
+
+    @return null;
+}
+
+@function spacer($size) {
+    @if map-has-key($spacers, $size) {
+        @return map-get($spacers, $size);
+    }
+
+    @warn 'There is no such breakpoint "#{$size}" in #{$spacers}';
+
+    @return null;
+}
+
+// Breakpoints
+@function get-breakpoint-suffix($breakpoint) {
+    @return if(map-get($breakpoints, $breakpoint) == 0, '', '-#{$breakpoint}');
+}

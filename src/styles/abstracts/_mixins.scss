@@ -1,0 +1,30 @@
+// Font Face
+@mixin font($fontName, $fileName, $weight, $style) {
+    @font-face {
+        font-family: $fontName;
+        font-display: swap;
+        src: url('../fonts/#{$fileName}.woff') format('woff'), url('../fonts/#{$fileName}.woff2') format('woff2');
+        font-style: #{$style};
+        font-weight: #{$weight};
+    }
+}
+
+@mixin media($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint: map-get($breakpoints, $breakpoint);
+
+        @if $breakpoint == 0 {
+            @content;
+        }
+
+        @else {
+            @media (min-width: #{$breakpoint}) {
+                @content;
+            }
+        }
+    }
+
+    @else {
+        @warn 'There is no such breakpoint "#{$breakpoint}" in #{$breakpoints}';
+    }
+}

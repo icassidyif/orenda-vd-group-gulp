@@ -1,0 +1,46 @@
+// Container
+$container-width: 75rem !default;
+$container-padding-sides: 0.9375rem !default;
+
+// Wrapper
+$wrapper-min-width: 20rem !default;
+
+// Border
+$border-width: 1px !default;
+$border-width-lg: 3px !default;
+
+$border-radius: 0.25rem !default;
+$border-radius-lg: 0.75rem !default;
+
+// Spacers
+$spacer-base: 1rem !default;
+$spacers: (
+    0: 0,
+    5: 5 / 16 * 1rem,
+    10: 10 / 16 * 1rem,
+    15: 15 / 16 * 1rem,
+    20: 20 / 16 * 1rem,
+    25: 25 / 16 * 1rem,
+    30: 30 / 16 * 1rem,
+    35: 35 / 16 * 1rem,
+    40: 40 / 16 * 1rem,
+    45: 45 / 16 * 1rem,
+    50: 50 / 16 * 1rem,
+    55: 55 / 16 * 1rem,
+    60: 60 / 16 * 1rem,
+    65: 65 / 16 * 1rem,
+    70: 70 / 16 * 1rem,
+    75: 75 / 16 * 1rem,
+    80: 80 / 16 * 1rem,
+    85: 85 / 16 * 1rem,
+    90: 90 / 16 * 1rem,
+    95: 95 / 16 * 1rem,
+    100: 100 / 16 * 1rem
+) !default;
+
+$text-align: (
+    left: left,
+    right: right,
+    center: center,
+    justify: justify
+) !default;

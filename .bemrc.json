@@ -1,0 +1,7 @@
+{
+    "paths": {
+        "modules": "src/blocks/modules",
+        "components": "src/blocks/components"
+    },
+    "technologies": ["pug", "js", "scss"]
+}

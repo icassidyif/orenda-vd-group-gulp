@@ -1,0 +1,55 @@
+.btn {
+    $parentSelector: #{&};
+
+    --button-bg: #{color(beige)};
+    --button-hover-bg: #{color(beige-alt)};
+    --button-color: #{color(light)};
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170 / 16 * 1rem;
+    min-height: 48 / 16 * 1rem;
+    padding: 10 / 16 * 1rem 15 / 16 * 1rem;
+    font-size: font-size(body1);
+    font-weight: fw(700);
+    line-height: get-proportion(18, 28);
+    color: var(--button-color);
+    cursor: pointer;
+    background-color: var(--button-bg);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--button-hover-bg);
+    }
+
+    &_dark {
+        --button-bg: #{color(dark)};
+        --button-hover-bg: #{color(dark-alt)};
+    }
+
+    &_light {
+        --button-bg: #{color(light)};
+        --button-hover-bg: #{color(light-alt)};
+        --button-color: #{color(dark)};
+    }
+
+    &_outlined {
+        --button-color: var(--button-bg);
+        --button-hover-bg: var(--button-color);
+
+        background-color: transparent;
+        box-shadow: inset 0 0 0 var(--border-width-lg) var(--button-color);
+
+        &:hover {
+            color: color(light);
+        }
+
+        &.btn_light {
+            &:hover {
+                color: color(dark);
+            }
+        }
+    }
+}

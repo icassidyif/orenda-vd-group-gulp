@@ -1,0 +1,17 @@
+section.hookup.section-spacing-outer#hookup
+    .container
+        .hookup__body
+            .hookup__header.section-header
+                h2.hookup__title.section-title Контакти
+                p.hookup__description.section-description Оформляйте заявку, щоби придбати квартиру своєї мрії! Наші менеджери Вам перетелефонують, проконсультують та допоможуть зробити правильний вибір.
+
+            form.form._validate(action='#' data-validate-form)
+                .form__input(data-error-text='*Будь ласка, введіть Ваше ім\'я')
+                    input._req(type='text' name='name' placeholder="Ім'я")
+                .form__input._tel(data-error-text='*Будь ласка, введіть коректний номер телефону')
+                    input._req(type='text' name='number' placeholder='Номер телефону')
+                .form__input
+                    textarea(placeholder='Коментар' name='comment')
+                .form__button
+                    button.btn Надіслати
+
