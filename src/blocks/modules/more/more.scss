@@ -1,0 +1,164 @@
+.more {
+    &__top {
+        margin: 0 0 2.5rem 0;
+
+        @include media(md) {
+            margin: 0 0 4.375rem 0;
+        }
+    }
+
+    &__middle {
+        position: relative;
+        padding: 0 0 var(--section-spacing) 0;
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -2;
+            width: 100%;
+            height: 60%;
+            content: '';
+            background-color: color(dark);
+        }
+
+        @include media(md) {
+            padding: 0 0 var(--section-spacing-md) 0;
+        }
+
+        @include media(lg) {
+            padding: 0 0 var(--section-spacing-lg) 0;
+        }
+
+        &-bg {
+            position: absolute;
+            bottom: 0;
+            left: 80%;
+            width: 300px;
+            z-index: -1;
+            display: none;
+            opacity: 0.5;
+
+            @include media(md) {
+                display: block;
+            }
+
+            * {
+                object-fit: contain;
+            }
+        }
+
+        &-items {
+            display: grid;
+            grid-gap: 2rem;
+            @include media(md) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @include media(lg) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        &-item {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+            background-color: color(beige);
+            border-radius: $border-radius-lg;
+            @include media(md) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            &-bg {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                right: 0;
+                transform: translateY(-50%) translateX(50%);
+                opacity: 0.1;
+            }
+            &-icon {
+                flex: 0 0 35 / 16 * 1rem;
+                margin: 0 2rem 0 0;
+                @include media(md) {
+                    margin: 0 0 1.5rem 0;
+                    width: 35 / 16 * 1rem;
+                }
+                svg {
+                    fill: color(dark);
+                }
+            }
+
+            &-title {
+                font-size: font-size(body1);
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        @include media(md) {
+            flex-direction: row;
+        }
+    }
+
+    &__info-img {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin: 0 0 2rem 0;
+        overflow: hidden;
+        border-radius: $border-radius-lg;
+
+        @include media(sm) {
+            height: 350px;
+        }
+
+        @include media(md) {
+            flex: 1 0 50%;
+            height: auto;
+            margin: 0 3rem 0 0;
+        }
+
+        @include media(lg) {
+            margin: 0 6rem 0 0;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background-color: color(beige);
+            opacity: 0.15;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info-content {
+        p {
+            margin: 0 0 2rem 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}

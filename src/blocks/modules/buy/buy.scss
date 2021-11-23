@@ -89,6 +89,7 @@
             left: 48%;
             z-index: -1;
             display: none;
+            opacity: 0.5;
 
             @include media(md) {
                 display: block;

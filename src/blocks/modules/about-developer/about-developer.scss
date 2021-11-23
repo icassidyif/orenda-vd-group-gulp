@@ -1,0 +1,25 @@
+#about-developer {
+    .advantages-item__title {
+        color: color(beige);
+    }
+    .advantages-item__text {
+        color: color(light);
+    }
+    .advantages__item {
+        background-color: color(dark);
+        padding: 2.1875rem 2.5rem;
+        border-radius: $border-radius-lg;
+        @include media(md) {
+            padding: 2.8125rem 3.125rem;
+        }
+    }
+    .advantages__grid {
+        @include media(sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

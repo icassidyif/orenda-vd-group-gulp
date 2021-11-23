@@ -2241,7 +2241,8 @@ button.swiper-pagination-bullet {
       bottom: 0;
       left: 48%;
       z-index: -1;
-      display: none; }
+      display: none;
+      opacity: 0.5; }
       @media (min-width: 48em) {
         .buy__middle-bg {
           display: block; } }
@@ -2317,6 +2318,154 @@ button.swiper-pagination-bullet {
     .buy__bottom-cta {
       --button-color: var(--beige);
       min-width: 16.875rem; }
+
+#about-developer .advantages-item__title {
+  color: var(--beige); }
+
+#about-developer .advantages-item__text {
+  color: var(--light); }
+
+#about-developer .advantages__item {
+  background-color: var(--dark);
+  padding: 2.1875rem 2.5rem;
+  border-radius: 0.75rem; }
+  @media (min-width: 48em) {
+    #about-developer .advantages__item {
+      padding: 2.8125rem 3.125rem; } }
+
+@media (min-width: 36em) {
+  #about-developer .advantages__grid {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 62em) {
+  #about-developer .advantages__grid {
+    grid-template-columns: repeat(3, 1fr); } }
+
+.more__top {
+  margin: 0 0 2.5rem 0; }
+  @media (min-width: 48em) {
+    .more__top {
+      margin: 0 0 4.375rem 0; } }
+
+.more__middle {
+  position: relative;
+  padding: 0 0 var(--section-spacing) 0; }
+  .more__middle::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    width: 100%;
+    height: 60%;
+    content: '';
+    background-color: var(--dark); }
+  @media (min-width: 48em) {
+    .more__middle {
+      padding: 0 0 var(--section-spacing-md) 0; } }
+  @media (min-width: 62em) {
+    .more__middle {
+      padding: 0 0 var(--section-spacing-lg) 0; } }
+  .more__middle-bg {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    width: 300px;
+    z-index: -1;
+    display: none;
+    opacity: 0.5; }
+    @media (min-width: 48em) {
+      .more__middle-bg {
+        display: block; } }
+    .more__middle-bg * {
+      object-fit: contain; }
+  .more__middle-items {
+    display: grid;
+    grid-gap: 2rem; }
+    @media (min-width: 48em) {
+      .more__middle-items {
+        grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 62em) {
+      .more__middle-items {
+        grid-template-columns: 1fr 1fr 1fr; } }
+  .more__middle-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--beige);
+    border-radius: 0.75rem; }
+    @media (min-width: 48em) {
+      .more__middle-item {
+        flex-direction: column;
+        align-items: flex-start; } }
+    .more__middle-item-bg {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 0;
+      transform: translateY(-50%) translateX(50%);
+      opacity: 0.1; }
+    .more__middle-item-icon {
+      flex: 0 0 2.1875rem;
+      margin: 0 2rem 0 0; }
+      @media (min-width: 48em) {
+        .more__middle-item-icon {
+          margin: 0 0 1.5rem 0;
+          width: 2.1875rem; } }
+      .more__middle-item-icon svg {
+        fill: var(--dark); }
+    .more__middle-item-title {
+      font-size: var(--body1);
+      font-weight: 500; }
+
+.more__title {
+  text-align: center; }
+
+.more__info {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 48em) {
+    .more__info {
+      flex-direction: row; } }
+
+.more__info-img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  border-radius: 0.75rem; }
+  @media (min-width: 36em) {
+    .more__info-img {
+      height: 350px; } }
+  @media (min-width: 48em) {
+    .more__info-img {
+      flex: 1 0 50%;
+      height: auto;
+      margin: 0 3rem 0 0; } }
+  @media (min-width: 62em) {
+    .more__info-img {
+      margin: 0 6rem 0 0; } }
+  .more__info-img::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: var(--beige);
+    opacity: 0.15; }
+  .more__info-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.more__info-content p {
+  margin: 0 0 2rem 0; }
+  .more__info-content p:last-child {
+    margin: 0; }
 
 .hookup {
   text-align: center;
