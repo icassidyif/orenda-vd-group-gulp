@@ -13,6 +13,15 @@
         }
     }
 
+    &__sub-title {
+        margin: 0 0 20 / 16 * 1rem 0;
+        font-size: font-size(h4);
+        font-weight: 600;
+        @include media(md) {
+            margin: 0 0 30 / 16 * 1rem 0;
+        }
+    }
+
     &__slider-wrapper {
         //display: inline-block;
     }
